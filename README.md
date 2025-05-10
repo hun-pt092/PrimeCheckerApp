@@ -49,3 +49,5 @@
 checker.isPrime(2);   // true
 checker.isPrime(9);   // false
 checker.isPrime(-5);  // false
+
+ cd "C:\Users\FPTShop Nho Quan\OneDrive\Documents\NetBeansProjects\PrimeCheckerApp" cái này ở phần chạy cmd

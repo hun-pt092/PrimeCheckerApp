@@ -31,4 +31,25 @@ public class PrimeCheckerTest {
     public void testNonPrime() {
         assertFalse(checker.isPrime(9));
     }
+    
+    // test issus 2
+    @Test
+    public void testPrimeWithLoopRun() {
+        assertTrue(checker.isPrime(13));  // Vòng lặp chạy nhiều lần, không return false
+    }
+    @Test
+    public void testLargeNonPrime() {
+        assertFalse(checker.isPrime(100)); // vòng for lặp nhiều lần
+    }
+
+    @Test
+    public void testNotPrimeWithLoopRun() {
+        assertFalse(checker.isPrime(15)); // Vòng lặp chạy và return false khi chia hết
+    }
+
+    @Test
+    public void testSmallestNonPrime() {
+        assertFalse(checker.isPrime(1)); // n <= 1
+    }
+
 }
